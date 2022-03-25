@@ -15,7 +15,7 @@ use App\Http\Controllers\matkulController;
 */
 
 Route::get('/', function () {
-    return view('welcome',['nama'=>'Fiona', 'jurusan'=>'Sistem Informasi']);
+    return view('welcome');
 });
 
 //Route::get('/', [matkulController::class, 'index']);
