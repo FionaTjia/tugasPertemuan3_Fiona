@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\mahasiswaController;
+use App\Http\Controllers\matkulController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,11 +14,11 @@ use App\Http\Controllers\mahasiswaController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome',['nama'=>'Fiona', 'jurusan'=>'Sistem Informasi']);
-// });
+Route::get('/', function () {
+    return view('welcome',['nama'=>'Fiona', 'jurusan'=>'Sistem Informasi']);
+});
 
-Route::get('/', [matkulController::class, 'index']);
+//Route::get('/', [matkulController::class, 'index']);
 
 Route::get('/MataKuliah', [matkulController::class, 'index']);
 

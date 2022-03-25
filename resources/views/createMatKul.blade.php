@@ -11,7 +11,30 @@
     <title>Tambah Data Mata Kuliah</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Tugas 3 - Fiona Tjia</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/MataKuliah">List Matakuliah</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/MataKuliah/create">Tambah Mata Kuliah</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
     <h1>Tambah Data Mata Kuliah</h1>
+    
     <form>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Kode Mata Kuliah</label>
@@ -19,11 +42,11 @@
           </div>
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Nama Mata Kuliah</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="masukkan nama mata kuliah..."></textarea>
+            <input class="form-control" id="exampleFormControlInput1" placeholder="masukkan nama mata kuliah...">
           </div>
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">SKS Mata Kuliah</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="masukkan jumlah sks mata kuliah..."></textarea>
+            <input class="form-control" id="exampleFormControlInput1" placeholder="masukkan jumlah SKS mata kuliah...">
           </div>
           <div class="col-auto">
               <button type="submit" class="btn btn-primary mb-3">Simpan</button>
